@@ -14,35 +14,33 @@
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/top_action_menu1"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_gravity="left"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/item_top_menu1"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/top_img1"/>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2">
 
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2">
+        android:layout_weight="1.5">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/top_img2"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/top_img3"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/top_img4"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/top_action_menu2"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/item_top_menu2"/>
 
     </LinearLayout>
 
@@ -74,6 +72,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="50dp"
         app:menu="@menu/btm_nv_menu"/>
 
 
