@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainFragment"
+    android:orientation="vertical"
+    >
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<!--    아이템 추가시 텍스트뷰 2개
+1개는 유동 1개는 고정
+프레임 레이아웃으로-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/login_img"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_arrow_right"
+            android:text="로그인"
+            android:textSize="27dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginTop="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17.5dp"
+            android:text="파리바게뜨에 오신 걸 환영합니다."/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <LinearLayout
+           style="@style/ll_banner_btns">
+            <ImageView
+                style="@style/imgv_best"
+                android:src="@drawable/best_yellow"/>
+            <ImageView
+                android:id="@+id/imgv_cake"
+                style="@style/imgv_banner_btn"
+                android:src="@drawable/btn_cake"/>
+            <TextView
+                style="@style/tv_banner_btn"
+                android:text="케이크 예약"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
