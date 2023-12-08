@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 
 import com.example.clone.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 
 import java.util.zip.Inflater;
 
@@ -19,10 +22,13 @@ public class MainActivity extends AppCompatActivity {
 
         //바텀 네비게이션에 이미지가 안보여서 처리해줌!!
         binding.bottomNav.setItemIconTintList(null);
-        binding.topActionMenu1.setItemIconTintList(null);
-        binding.topActionMenu2.setItemIconTintList(null);
+
 
         setContentView(binding.getRoot());
         ActionBar actionBar = getSupportActionBar();
+
+
+
+
     }
     }
