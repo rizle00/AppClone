@@ -9,10 +9,21 @@
         <item name="android:orientation">vertical</item>
 
     </style>
+
+    <style name="ll_banner_btns_margin" parent="ll_banner_btns">
+        <item name="android:layout_marginTop">18dp</item>
+    </style>
     <style name="imgv_best">
         <item name="android:scaleType">fitXY</item>
         <item name="android:layout_width">35dp</item>
         <item name="android:layout_height">18dp</item>
+
+    </style>
+    <style name="imgv_hot" >
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">15.5dp</item>
+        <item name="android:layout_marginBottom">2.5dp</item>
 
     </style>
     <style name="imgv_banner_btn">
@@ -20,15 +31,47 @@
         <item name="android:layout_height">35dp</item>
 
     </style>
+    <style name="imgv_banner_btn_below">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginLeft">3dp</item>
+    </style>
     <style name="tv_banner_btn">
         <item name="android:textSize">12dp</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
 
     </style>
+    <style name="tv_banner_btn_margin" parent="tv_banner_btn">
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+    <style name="tv_rec">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
 
+    </style>
+    <style name="v_line_sel">
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="v_line_def">
+        <item name="alpha">0.4</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#DCDBDB</item>
+    </style>
+    <style name="chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@drawable/chip_bg_state</item>
+        <item name="android:textColor">@drawable/chip_tv_state</item>
+    </style>
 </resources>
 
 
-
-</LinearLayout>
