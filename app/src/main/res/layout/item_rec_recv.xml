@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/imgv_rec"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/rec1"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_rec_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3만"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#9CB1700E"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개 구매중"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_rec_name"
+            android:layout_width="120dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="베리 요거트 케이크(15cm)"/>
+
+</LinearLayout>

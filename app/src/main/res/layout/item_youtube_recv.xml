@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="#CFCCCC"
+        app:strokeWidth="1dp"
+        >
+<!--        이미지 따기 그냥 이미지로 처리 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/best_1000"/>
+<!--            썸네일처리? 확인해볼것 유튜브 연결 필요-->
+        <ImageView
+            android:id="@+id/imgv_youtube"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/top_banner1"/>
+            <ImageView
+                android:id="@+id/imgv_youtube_text"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bottom_banner"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

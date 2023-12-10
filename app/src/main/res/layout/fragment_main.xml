@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,6 +19,7 @@
 
 
             <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
                 android:id="@+id/recv_banner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -43,17 +44,17 @@
                     android:layout_marginTop="10dp"
                     android:drawableRight="@drawable/ic_arrow_right"
                     android:text="로그인"
+                    android:textColor="@color/black"
                     android:textSize="27dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="48dp"
                     android:text="파리바게뜨에 오신 걸 환영합니다."
-                    android:textSize="17.5dp"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black"
+                    android:textSize="17.5dp" />
             </FrameLayout>
 
             <LinearLayout
@@ -92,7 +93,8 @@
 
                     <TextView
                         style="@style/tv_banner_btn_margin"
-                        android:text="상품찾기" />
+                        android:text="상품찾기"
+                        tools:ignore="TextSizeCheck" />
 
                 </LinearLayout>
 
@@ -122,7 +124,8 @@
 
                     <TextView
                         style="@style/tv_banner_btn_margin"
-                        android:text="이벤트" />
+                        android:text="이벤트"
+                        tools:ignore="TextSizeCheck" />
 
                 </LinearLayout>
 
@@ -157,7 +160,8 @@
 
                     <TextView
                         style="@style/tv_banner_btn_margin"
-                        android:text="딜리버리" />
+                        android:text="딜리버리"
+                        tools:ignore="TextSizeCheck" />
 
                 </LinearLayout>
 
@@ -215,7 +219,7 @@
                     >
 
                     <TextView
-                        android:id="@+id/tv_rec"
+                        android:id="@+id/tv_rec_banner"
                         style="@style/tv_rec"
                         android:layout_height="match_parent"
                         android:text="이번주 추천"
@@ -243,90 +247,183 @@
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
                 android:id="@+id/recv_rec"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:src="@drawable/bottom_banner"/>
-            <RelativeLayout
+                android:src="@drawable/bottom_banner" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#f1f5ff"
-                android:paddingTop="30dp"
                 android:paddingLeft="10dp"
-                android:paddingBottom="5dp">
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/tv_ranking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="파바앱 랭킹 TOP10 "
-                    android:textSize="27dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
                     android:drawableRight="@drawable/tv_trophy"
-                    android:layout_marginBottom="5dp"/>
+                    android:text="파바앱 랭킹 TOP10 "
+                    android:textColor="@color/black"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
 
                 <com.google.android.material.chip.ChipGroup
-                    android:layout_below="@id/tv_ranking"
-                    android:layout_width="350dp"
-                    android:layout_height="wrap_content">
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_1"
-                    style="@style/chip"
-                    app:chipBackgroundColor="@color/white"
-                    app:rippleColor="@color/dark_blue"
-                    android:layout_width="wrap_content"
+                    android:layout_width="400dp"
                     android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="#당 충전시간#"
-                    android:textColor="@color/white"
-                    app:iconStartPadding="5dp"
-                    android:textSize="15dp"
-                    android:textAlignment="center"
-                    app:chipIconVisible="true"
-                    android:layoutDirection="rtl"
-                    app:chipIcon="@drawable/tv_sweet"
-                    />
+                    >
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_2"
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_1"
+                        style="@style/chip"
+                        android:checked="true"
+                        android:text="#당 충전시간#"
+                        app:chipIcon="@drawable/tv_sweet"
+                        app:chipIconVisible="true"
+                        app:iconStartPadding="5dp" />
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:text="text_choice_2"
-                    chip/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_2"
+                        style="@style/chip"
+                        android:text="#특별한날 케이크"
+                        app:chipIcon="@drawable/tv_cake"
+                        app:chipIconVisible="true"
+                        app:iconStartPadding="5dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:text="text_choice_3"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_3"
+                        style="@style/chip"
+                        android:text="#파리의아침 메뉴"
+                        app:chipIcon="@drawable/tv_sun"
+                        app:chipIconVisible="true"
+                        app:iconStartPadding="5dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:text="text_choice_4"/>
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_4"
+                        style="@style/chip"
+                        android:text="#NEW인기급상승↗"/>
+
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip_5"
-                        android:layout_width="wrap_content"
+                        style="@style/chip"
+                        android:text="#건강한! 한끼"
+                        app:chipIcon="@drawable/tv_abo"
+                        app:chipIconVisible="true"
+                        app:iconStartPadding="5dp" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/recv_ranking"
+                    android:layout_alignParentRight="true"
+                    android:text="전일 기준 판매 순위" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recv_ranking"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        style="@style/Widget.MaterialComponents.Chip.Choice"
-                        android:text="text_choice_4"/>
 
-            </com.google.android.material.chip.ChipGroup>
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+<!--            바텀 쪽 이미지 따기-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:src="@drawable/bottom_banner"/>
+<!--            카드뷰 테두리 처리 확인하기-->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="0dp"
+
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="0dp"
+                    >
+                    <TextView
+                        android:id="@+id/tv_btm_youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="유튜브 추천"
+                        android:gravity="center"
+                        android:textSize="20dp"/>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="0dp"
+                    >
+                    <TextView
+                        android:background="@color/dark_blue"
+                        android:id="@+id/tv_btm_insta"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="인스타그램"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"/>
+                </com.google.android.material.card.MaterialCardView>
 
 
-            </RelativeLayout>
-
-
+            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recv_content"/>
             <!--스크롤뷰 리니어-->
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+<!--    가능하다면 사전예약 버튼 바뀌게 처리하기
+아이디 부여 이상이있나?-->
+    <ImageView
+        android:id="@+id/btn_res"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/btn_res"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="30dp"/>
+
+</FrameLayout>
