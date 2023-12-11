@@ -10,7 +10,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -347,11 +348,12 @@
 
             </LinearLayout>
 <!--            바텀 쪽 이미지 따기-->
+            <!--            카드뷰 테두리 처리 확인하기-->
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:src="@drawable/bottom_banner"/>
-<!--            카드뷰 테두리 처리 확인하기-->
+                android:layout_height="wrap_content"
+                android:src="@drawable/banner_ranking" />
+
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -407,11 +409,10 @@
 
             </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="20dp"
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/recv_content"/>
+                android:id="@+id/inner_contatiner"/>
             <!--스크롤뷰 리니어-->
         </LinearLayout>
     </ScrollView>
