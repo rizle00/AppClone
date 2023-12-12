@@ -49,13 +49,13 @@
     <style name="tv_rec">
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">20dp</item>
 
     </style>
     <style name="v_line_sel">
-        <item name="android:layout_marginTop">13dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">3dp</item>
         <item name="android:background">@color/dark_blue</item>
@@ -63,7 +63,6 @@
 
     <style name="v_line_def">
         <item name="alpha">0.4</item>
-        <item name="android:layout_marginTop">15dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
         <item name="android:background">#DCDBDB</item>
