@@ -2,6 +2,7 @@ package com.example.clone.main;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,10 +42,15 @@ public class MainRecAdt extends RecyclerView.Adapter<MainRecAdt.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
             View vL = fragment.binding.vRecLeft;
             View vR = fragment.binding.vRecRight;
+//      넘어가는 부분이 이상함 확인 필요
         if(i>10){
-            fragment.binding.tvRecBanner.setTextColor(R.color.gray);
-            fragment.binding.tvYrecBanner.setTextColor(R.color.light_blue);
+            fragment.binding.tvRecBanner.setTextColor(Color.parseColor("#FF808080"));
+            fragment.binding.tvYrecBanner.setTextColor(Color.parseColor("#FF013780"));
             vL.setAlpha(0.4f);
+            LinearLayout.LayoutParams vRH = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 150);
+            vR.setLayoutParams(vRH);
+            LinearLayout.LayoutParams vLH = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 3);
+            vR.setLayoutParams(vLH);
 //            추후 처리 질문할것 레이아웃 변경.
 //            ViewGroup.LayoutParams vLH = vL.getLayoutParams();
 //            vLH.width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -61,18 +67,20 @@ public class MainRecAdt extends RecyclerView.Adapter<MainRecAdt.ViewHolder> {
 //            vL.getLayoutParams().height = vR.getHeight();
 //            vR.getLayoutParams().height = vL.getHeight();
 //            vL.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,1));
-            vL.setBackgroundColor(R.color.light_gray);
+            vL.setBackgroundColor(Color.parseColor("#FFDCDBDB"));
             vR.setAlpha(1);
 //            vR.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,3));
-            vR.setBackgroundColor(R.color.dark_blue);
-        } else {
-            fragment.binding.tvRecBanner.setTextColor(R.color.light_blue);
-            fragment.binding.tvYrecBanner.setTextColor(R.color.gray);
+            vR.setBackgroundColor(Color.parseColor("#FF01265f"));
+        } else if(i<=8) {
+            fragment.binding.tvRecBanner.setTextColor(Color.parseColor("#FF013780"));
+            fragment.binding.tvYrecBanner.setTextColor(Color.parseColor("#FF808080"));
             vL.setAlpha(1);
-
-            vL.setBackgroundColor(R.color.dark_blue);
+            ViewGroup.LayoutParams vLH = vR.getLayoutParams();
+            vLH.height = 9;
+            vR.setLayoutParams(vLH);
+            vL.setBackgroundColor(Color.parseColor("#FF01265f"));
             vR.setAlpha(0.4f);
-            vR.setBackgroundColor(R.color.light_gray);
+            vR.setBackgroundColor(Color.parseColor("#FFDCDBDB"));
         }
         h.binding.imgvRec.setImageResource(list.get(i).getImgRes());
         h.binding.tvRecName.setText(list.get(i).getName());

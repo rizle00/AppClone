@@ -1,6 +1,7 @@
 package com.example.clone.main;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -62,22 +63,25 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 //        온클릭 리스너 바깥으로 빼기
         binding.btnYoutube.setOnClickListener(v -> {
             changeFragment(new YoutubeFragment());
-            binding.btnYoutube.setTextColor(R.color.white);
+            binding.btnYoutube.setTextColor(Color.parseColor("#FFFFFFFF"));
             binding.btnYoutube.setBackgroundResource(R.drawable.btn_content_sel);
-            binding.btnInsta.setTextColor(R.color.dark_gray);
+            binding.btnInsta.setTextColor(Color.parseColor("#FF595757"));
             binding.btnInsta.setBackgroundResource(R.drawable.btn_content_unsel);
         });
         binding.btnInsta.setOnClickListener(v -> {
             changeFragment(new InstaFragment());
-            binding.btnYoutube.setTextColor(R.color.dark_gray);
+            binding.btnYoutube.setTextColor(Color.parseColor("#FF595757"));
             binding.btnYoutube.setBackgroundResource(R.drawable.btn_content_unsel);
-            binding.btnInsta.setTextColor(R.color.white);
+            binding.btnInsta.setTextColor(Color.parseColor("#FFFFFFFF"));
             binding.btnInsta.setBackgroundResource(R.drawable.btn_content_sel);
         });
         binding.imgvMore.setOnClickListener(v -> {
+//            채크 필요
             binding.llBtnBelow.setVisibility(View.VISIBLE);
-            binding.imgvMore.setImageResource(R.drawable.btn_bedge);
-            binding.tvMore.setText("배지");
+            binding.imgvMore.setVisibility(View.GONE);
+            binding.tvMore.setVisibility(View.GONE);
+            binding.imgvBedge.setVisibility(View.VISIBLE);
+            binding.tvMore.setVisibility(View.VISIBLE);
         });
 
         return binding.getRoot();

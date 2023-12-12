@@ -145,6 +145,21 @@
                         android:text="더보기" />
 
                 </LinearLayout>
+                <LinearLayout style="@style/ll_banner_btns_margin">
+<!--                    체크 visibility 자리차지..?-->
+                    <ImageView
+                        android:id="@+id/imgv_bedge"
+                        style="@style/imgv_banner_btn"
+                        android:src="@drawable/btn_bedge"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/tv_bedge"
+                        style="@style/tv_banner_btn_margin"
+                        android:text="배지"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -398,13 +413,21 @@
 
 
             </LinearLayout>
-<!--             프래그먼트 넣기-->
+
+<!--             마진이 없는 데 왜 뜰까?-->
             <FrameLayout
                 android:layout_width="match_parent"
-                android:padding="10dp"
-                android:layout_height="300dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:layout_height="270dp"
                 android:id="@+id/inner_contatiner"/>
-
+<!--            이미지 수정 필요-->
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/bottom_bg"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
