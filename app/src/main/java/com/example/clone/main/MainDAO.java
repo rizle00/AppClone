@@ -122,4 +122,15 @@ public class MainDAO {
 
         return list;
     }
+
+    ArrayList<MainDTOs.YoutubeDTO> getYouList(){
+        ArrayList<MainDTOs.YoutubeDTO> list = new ArrayList<>();
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum1, R.drawable.content_text1));
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum2, R.drawable.content_text2));
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum3, R.drawable.content_text3));
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum4, R.drawable.content_text4));
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum5, R.drawable.content_text5));
+        list.add(new MainDTOs().new YoutubeDTO(R.drawable.thum6, R.drawable.content_text6));
+        return list;
+    }
 }

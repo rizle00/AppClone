@@ -83,4 +83,29 @@ public class MainDTOs {
             this.name = name;
         }
     }
+
+    public class YoutubeDTO{
+        private int thumnailRes, textRes;
+
+        public YoutubeDTO(int thumnailRes, int instaRes) {
+            this.thumnailRes = thumnailRes;
+            this.textRes = instaRes;
+        }
+
+        public int getThumnailRes() {
+            return thumnailRes;
+        }
+
+        public void setThumnailRes(int thumnailRes) {
+            this.thumnailRes = thumnailRes;
+        }
+
+        public int getTextRes() {
+            return textRes;
+        }
+
+        public void setTextRes(int textRes) {
+            this.textRes = textRes;
+        }
+    }
 }

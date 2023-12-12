@@ -1,5 +1,6 @@
 package com.example.clone.main;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,10 +16,11 @@ import com.example.clone.databinding.FragmentMainBinding;
 import com.google.android.material.chip.ChipGroup;
 
 
-public class MainFragment extends Fragment {
+public class MainFragment extends Fragment implements View.OnClickListener {
 
     FragmentMainBinding binding;
 
+    @SuppressLint("ResourceAsColor")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -52,8 +54,41 @@ public class MainFragment extends Fragment {
                 binding.recvRanking.setLayoutManager(new LinearLayoutManager(getContext()));
             }
         });
-
+        
+        
+        
+        changeFragment(new YoutubeFragment());
+//        텍스트 색상 안바뀜..
+//        온클릭 리스너 바깥으로 빼기
+        binding.btnYoutube.setOnClickListener(v -> {
+            changeFragment(new YoutubeFragment());
+            binding.btnYoutube.setTextColor(R.color.white);
+            binding.btnYoutube.setBackgroundResource(R.drawable.btn_content_sel);
+            binding.btnInsta.setTextColor(R.color.dark_gray);
+            binding.btnInsta.setBackgroundResource(R.drawable.btn_content_unsel);
+        });
+        binding.btnInsta.setOnClickListener(v -> {
+            changeFragment(new InstaFragment());
+            binding.btnYoutube.setTextColor(R.color.dark_gray);
+            binding.btnYoutube.setBackgroundResource(R.drawable.btn_content_unsel);
+            binding.btnInsta.setTextColor(R.color.white);
+            binding.btnInsta.setBackgroundResource(R.drawable.btn_content_sel);
+        });
+        binding.imgvMore.setOnClickListener(v -> {
+            binding.llBtnBelow.setVisibility(View.VISIBLE);
+            binding.imgvMore.setImageResource(R.drawable.btn_bedge);
+            binding.tvMore.setText("배지");
+        });
 
         return binding.getRoot();
+    }
+
+    public void changeFragment(Fragment fragment){
+        getChildFragmentManager().beginTransaction().replace(R.id.inner_contatiner, fragment).commit();
+    }
+
+    @Override
+    public void onClick(View v) {
+        
     }
 }
