@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nv4List"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="매장목록"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_vcd"/>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="30dp">
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현위치"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="단골/최근"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지역별"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_s"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/img_line"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+    <HorizontalScrollView
+        android:background="#EBF3FB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:selectionRequired="true"
+            app:singleSelection="false">
+            <!-- 선택 된 칩은 검정 배경에 흰 글자 -->
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="현장행사"
+                android:textColor="#A3A4A5"
+                app:chipBackgroundColor="#F9F9FA"
+                app:chipIconEnabled="true"
+                app:chipIconTint="#F3F4F6"
+                app:chipMinHeight="60dp"
+                app:iconEndPadding="10dp"
+                app:iconStartPadding="10dp"
+                app:textEndPadding="5dp"
+                app:textStartPadding="5dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="구독권"
+                android:textColor="#A3A4A5"
+                app:chipBackgroundColor="#F9F9FA"
+                app:chipIconEnabled="true"
+                app:chipIconTint="#F3F4F6"
+                app:chipMinHeight="60dp"
+                app:iconEndPadding="10dp"
+                app:iconStartPadding="10dp"
+                app:textEndPadding="5dp"
+                app:textStartPadding="5dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="쿠폰"
+                android:textColor="#A3A4A5"
+                app:chipBackgroundColor="#F9F9FA"
+                app:chipIconEnabled="true"
+                app:chipIconTint="#F3F4F6"
+                app:chipMinHeight="60dp"
+                app:iconEndPadding="10dp"
+                app:iconStartPadding="10dp"
+                app:textEndPadding="5dp"
+                app:textStartPadding="5dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_4"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="스탭프"
+                android:textAlignment="center"
+                android:textColor="#A3A4A5"
+                app:chipBackgroundColor="#F9F9FA"
+                app:chipIconEnabled="true"
+                app:chipIconTint="#F3F4F6"
+                app:chipMinHeight="60dp"
+                app:iconEndPadding="10dp"
+                app:iconStartPadding="10dp"
+                app:textEndPadding="5dp"
+                app:textStartPadding="5dp" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_5"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="사전예약"
+                android:textAlignment="center"
+                android:textColor="#A3A4A5"
+                app:chipBackgroundColor="#F9F9FA"
+                app:chipIconEnabled="true"
+                app:chipIconTint="#F3F4F6"
+                app:chipMinHeight="60dp"
+                app:iconEndPadding="10dp"
+                app:iconStartPadding="10dp"
+                app:textEndPadding="5dp"
+                app:textStartPadding="5dp" />
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+         <!--list 사용시 기본모양-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"    >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_android_black_24dp"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/img_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="광주공군비행단"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_android_black_24dp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_info2"
+                android:layout_below="@+id/img_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#6DA3DA"
+                app:cardCornerRadius="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#08121C"
+                    android:textSize="10dp"
+                    android:text="커피특가"/>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_info3"
+
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img_info2"
+                android:layout_alignBottom="@+id/img_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#F1ADBD"
+                app:cardCornerRadius="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#C10A1D"
+                    android:textSize="10dp"
+                    android:text="파리의아침"/>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/img_info4"
+                android:layout_below="@+id/img_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="픽업가능시간 : 06:00~21:00"/>
+            <TextView
+                android:id="@+id/img_info5"
+                android:layout_marginLeft="90dp"
+                android:layout_toRightOf="@+id/img_info4"
+                android:layout_alignBottom="@+id/img_info4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="920m"/>
+
+
+            <TextView
+                android:id="@+id/img_info6"
+                android:layout_below="@+id/img_info4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="품목 164"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
