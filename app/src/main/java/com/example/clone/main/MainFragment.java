@@ -75,13 +75,11 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             binding.btnInsta.setTextColor(Color.parseColor("#FFFFFFFF"));
             binding.btnInsta.setBackgroundResource(R.drawable.btn_content_sel);
         });
-        binding.imgvMore.setOnClickListener(v -> {
+        binding.llItemMore.setOnClickListener(v -> {
 //            채크 필요
             binding.llBtnBelow.setVisibility(View.VISIBLE);
-            binding.imgvMore.setVisibility(View.GONE);
-            binding.tvMore.setVisibility(View.GONE);
-            binding.imgvBedge.setVisibility(View.VISIBLE);
-            binding.tvMore.setVisibility(View.VISIBLE);
+           binding.llItemBedge.setVisibility(View.VISIBLE);
+           binding.llItemMore.setVisibility(View.GONE);
         });
 
         return binding.getRoot();

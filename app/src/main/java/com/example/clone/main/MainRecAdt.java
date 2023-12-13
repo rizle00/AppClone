@@ -42,44 +42,33 @@ public class MainRecAdt extends RecyclerView.Adapter<MainRecAdt.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder h, int i) {
             View vL = fragment.binding.vRecLeft;
             View vR = fragment.binding.vRecRight;
+
 //      넘어가는 부분이 이상함 확인 필요
         if(i>10){
             fragment.binding.tvRecBanner.setTextColor(Color.parseColor("#FF808080"));
             fragment.binding.tvYrecBanner.setTextColor(Color.parseColor("#FF013780"));
-            vL.setAlpha(0.4f);
-            LinearLayout.LayoutParams vRH = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 150);
-            vR.setLayoutParams(vRH);
-            LinearLayout.LayoutParams vLH = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 3);
-            vR.setLayoutParams(vLH);
-//            추후 처리 질문할것 레이아웃 변경.
-//            ViewGroup.LayoutParams vLH = vL.getLayoutParams();
-//            vLH.width = ViewGroup.LayoutParams.MATCH_PARENT;
-//            vLH.height =1;
-//            vL.requestLayout();
-//            ViewGroup.LayoutParams vRH = vR.getLayoutParams();
-//            vRH.height =3;
+//            vL.setAlpha(0.4f);
+//            LinearLayout.LayoutParams vLH = (LinearLayout.LayoutParams) vL.getLayoutParams();
+//            vLH.height = 2;
+//            LinearLayout.LayoutParams vRH = (LinearLayout.LayoutParams) vR.getLayoutParams();
+//            vRH.height = 10;
 //            vR.setLayoutParams(vRH);
+//            vL.setLayoutParams(vLH);
+//            vR.getLayoutParams().height = 9;
+//            vL.getLayoutParams().height =3;
 
-
-
-//            vR.setLayoutParams(new ViewGroup.LayoutParams(vL.getWidth(),vL.getHeight()));
-//            vL.setLayoutParams(new ViewGroup.LayoutParams(vR.getWidth(),vR.getHeight()));
-//            vL.getLayoutParams().height = vR.getHeight();
-//            vR.getLayoutParams().height = vL.getHeight();
-//            vL.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,1));
             vL.setBackgroundColor(Color.parseColor("#FFDCDBDB"));
             vR.setAlpha(1);
-//            vR.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,3));
+           // vR.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,3));
             vR.setBackgroundColor(Color.parseColor("#FF01265f"));
-        } else if(i<=8) {
+        } else if(i<=10) {
             fragment.binding.tvRecBanner.setTextColor(Color.parseColor("#FF013780"));
             fragment.binding.tvYrecBanner.setTextColor(Color.parseColor("#FF808080"));
-            vL.setAlpha(1);
-            ViewGroup.LayoutParams vLH = vR.getLayoutParams();
-            vLH.height = 9;
-            vR.setLayoutParams(vLH);
+//            vL.setAlpha(1);
+//            vR.getLayoutParams().height = 3;
+//            vL.getLayoutParams().height =9;
             vL.setBackgroundColor(Color.parseColor("#FF01265f"));
-            vR.setAlpha(0.4f);
+//            vR.setAlpha(0.4f);
             vR.setBackgroundColor(Color.parseColor("#FFDCDBDB"));
         }
         h.binding.imgvRec.setImageResource(list.get(i).getImgRes());

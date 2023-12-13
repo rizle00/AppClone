@@ -20,6 +20,17 @@ public class MainRankingAdt extends RecyclerView.Adapter<MainRankingAdt.ViewHold
         this.list = list;
     }
 
+//    아이템 처리
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+// 여기까지
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

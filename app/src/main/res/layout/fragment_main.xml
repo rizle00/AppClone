@@ -47,6 +47,7 @@
                     android:drawableRight="@drawable/ic_arrow_right"
                     android:text="로그인"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/spoqahansansneo_bold"
                     android:textSize="27dp"
                     android:textStyle="bold" />
 
@@ -56,6 +57,7 @@
                     android:layout_marginTop="48dp"
                     android:text="파리바게뜨에 오신 걸 환영합니다."
                     android:textColor="@color/black"
+                    android:fontFamily="@font/spoqahansansneo_regular"
                     android:textSize="17.5dp" />
             </FrameLayout>
 
@@ -65,31 +67,35 @@
                 android:orientation="horizontal"
                 android:paddingLeft="10dp">
 
-                <LinearLayout style="@style/ll_banner_btns">
+                <LinearLayout
+                    android:id="@+id/ll_item_cake"
+                    style="@style/ll_banner_btns">
 
                     <ImageView
                         style="@style/imgv_best"
                         android:src="@drawable/best_yellow" />
 
                     <ImageView
-                        android:id="@+id/imgv_cake"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn_cake" />
 
                     <TextView
                         style="@style/tv_banner_btn"
+
+
                         android:text="케이크 예약" />
 
                 </LinearLayout>
 
-                <LinearLayout style="@style/ll_banner_btns">
+                <LinearLayout
+                    android:id="@+id/ll_item_search"
+                    style="@style/ll_banner_btns">
 
                     <ImageView
                         style="@style/imgv_hot"
                         android:src="@drawable/hot" />
 
                     <ImageView
-                        android:id="@+id/imgv_search"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn_search" />
 
@@ -100,14 +106,15 @@
 
                 </LinearLayout>
 
-                <LinearLayout style="@style/ll_banner_btns">
+                <LinearLayout
+                    android:id="@+id/ll_item_sand"
+                    style="@style/ll_banner_btns">
 
                     <ImageView
                         style="@style/imgv_best"
                         android:src="@drawable/best_yellow" />
 
                     <ImageView
-                        android:id="@+id/imgv_sand"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn__sand" />
 
@@ -117,10 +124,11 @@
 
                 </LinearLayout>
 
-                <LinearLayout style="@style/ll_banner_btns_margin">
+                <LinearLayout
+                    android:id="@+id/ll_item_event"
+                    style="@style/ll_banner_btns_margin">
 
                     <ImageView
-                        android:id="@+id/imgv_event"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn_event" />
 
@@ -132,32 +140,33 @@
                 </LinearLayout>
 
 
-                <LinearLayout style="@style/ll_banner_btns_margin">
+                <LinearLayout
+                    android:id="@+id/ll_item_more"
+                    style="@style/ll_banner_btns_margin">
 
                     <ImageView
-                        android:id="@+id/imgv_more"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn_more" />
 
                     <TextView
-                        android:id="@+id/tv_more"
                         style="@style/tv_banner_btn_margin"
                         android:text="더보기" />
 
                 </LinearLayout>
-                <LinearLayout style="@style/ll_banner_btns_margin">
-<!--                    체크 visibility 자리차지..?-->
+                <LinearLayout
+                    android:id="@+id/ll_item_bedge"
+                    style="@style/ll_banner_btns_margin"
+                    android:visibility="gone">
+<!--                    체크 visibility 자리차지..? 리니어가 아이템임 리니어에 id 처리-->
                     <ImageView
-                        android:id="@+id/imgv_bedge"
                         style="@style/imgv_banner_btn"
                         android:src="@drawable/btn_bedge"
-                        android:visibility="gone"/>
+                        />
 
                     <TextView
-                        android:id="@+id/tv_bedge"
                         style="@style/tv_banner_btn_margin"
                         android:text="배지"
-                        android:visibility="gone"/>
+                        />
 
                 </LinearLayout>
             </LinearLayout>
@@ -170,24 +179,26 @@
                 android:paddingLeft="10dp"
                 android:visibility="gone">
 
-                <LinearLayout style="@style/ll_banner_btns_margin">
+                <LinearLayout
+                    android:id="@+id/ll_item_delivery"
+                    style="@style/ll_banner_btns_margin">
 
                     <ImageView
-                        android:id="@+id/imgv_delivery"
                         style="@style/imgv_banner_btn_below"
                         android:src="@drawable/btn_deliver" />
 
                     <TextView
                         style="@style/tv_banner_btn_margin"
                         android:text="딜리버리"
-                        tools:ignore="TextSizeCheck" />
+                         />
 
                 </LinearLayout>
 
-                <LinearLayout style="@style/ll_banner_btns_margin">
+                <LinearLayout
+                    android:id="@+id/ll_item_gift"
+                    style="@style/ll_banner_btns_margin">
 
                     <ImageView
-                        android:id="@+id/imgv_gift"
                         style="@style/imgv_banner_btn_below"
                         android:src="@drawable/btn_gift" />
 
@@ -197,10 +208,11 @@
 
                 </LinearLayout>
 
-                <LinearLayout style="@style/ll_banner_btns_margin">
+                <LinearLayout
+                    android:id="@+id/ll_item_paper"
+                    style="@style/ll_banner_btns_margin">
 
                     <ImageView
-                        android:id="@+id/imgv_paper"
                         style="@style/imgv_banner_btn_below"
                         android:src="@drawable/btn_paper" />
 
@@ -231,7 +243,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="45dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical"
 
@@ -251,7 +263,7 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="45dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -292,6 +304,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/spoqahansansneo_bold"
                     android:drawableRight="@drawable/tv_trophy"
                     android:text="파바앱 랭킹 TOP10 "
                     android:textColor="@color/black"
@@ -349,6 +362,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="5dp"
                     android:gravity="right"
+                    android:fontFamily="@font/spoqahansansneo_regular"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_above="@+id/recv_ranking"
@@ -395,6 +409,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="50dp"
+                        android:fontFamily="@font/spoqahansansneo_bold"
                         android:text="유튜브 추천"
                         android:textColor="@color/white"
                         android:gravity="center"
@@ -406,6 +421,7 @@
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="50dp"
+                        android:fontFamily="@font/spoqahansansneo_bold"
                         android:textColor="#595757"
                         android:text="인스타그램"
                         android:gravity="center"
@@ -426,7 +442,7 @@
             <ImageView
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="80dp"
                 android:src="@drawable/bottom_bg"/>
             <RelativeLayout
                 android:layout_width="match_parent"

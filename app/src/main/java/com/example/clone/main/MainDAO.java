@@ -83,9 +83,9 @@ public class MainDAO {
     ArrayList<MainDTOs.RankingDTO> getCakeRankList(){
 
         ArrayList<MainDTOs.RankingDTO> list =  new ArrayList<>();
-        list.add(new MainDTOs().new RankingDTO(R.drawable.cake1,1, 1000, "마이넘버원(18cm)"));
-        list.add(new MainDTOs().new RankingDTO(R.drawable.cake2,2, 1000, "초코반딸기반케이크(18cm)"));
-        list.add(new MainDTOs().new RankingDTO(R.drawable.cake3,3, 500, "진한크림치즈 가득 클래식 치즈케이크(21cm)"));
+        list.add(new MainDTOs().new RankingDTO(R.drawable.cake1,1, 0, "마이넘버원(18cm)"));
+        list.add(new MainDTOs().new RankingDTO(R.drawable.cake2,2, 0, "초코반딸기반케이크(18cm)"));
+        list.add(new MainDTOs().new RankingDTO(R.drawable.cake3,3, 0, "진한크림치즈 가득 클래식 치즈케이크(21cm)"));
         list.add(new MainDTOs().new RankingDTO(R.drawable.cake4,4, 0, "클래식 고구마케이크(18cm)"));
         list.add(new MainDTOs().new RankingDTO(R.drawable.cake5,5, 0, "상큼한 블루베리쉬폰(18cm)"));
         list.add(new MainDTOs().new RankingDTO(R.drawable.cake6,6, 0, "블라썸 러브(13cm)"));
