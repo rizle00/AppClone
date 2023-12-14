@@ -44,7 +44,7 @@
     <ImageView
         android:id="@+id/imgv_best"
         android:scaleType="fitXY"
-        android:layout_width="60dp"
+        android:layout_width="45dp"
         android:layout_height="30dp"
         android:src="@drawable/best_1000"/>
     </LinearLayout>
