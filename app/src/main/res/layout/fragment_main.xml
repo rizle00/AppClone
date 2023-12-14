@@ -154,13 +154,13 @@
 
                 </LinearLayout>
                 <LinearLayout
-                    android:id="@+id/ll_item_bedge"
+                    android:id="@+id/ll_item_badge"
                     style="@style/ll_banner_btns_margin"
                     android:visibility="gone">
 <!--                    체크 visibility 자리차지..? 리니어가 아이템임 리니어에 id 처리-->
                     <ImageView
                         style="@style/imgv_banner_btn"
-                        android:src="@drawable/btn_bedge"
+                        android:src="@drawable/btn_badge"
                         />
 
                     <TextView

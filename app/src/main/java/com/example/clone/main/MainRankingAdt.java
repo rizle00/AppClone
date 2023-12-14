@@ -44,29 +44,29 @@ public class MainRankingAdt extends RecyclerView.Adapter<MainRankingAdt.ViewHold
         h.binding.tvRankingNum.setText(list.get(i).getRank()+"");
         h.binding.imgvRanking.setImageResource(list.get(i).getImgRes());
         h.binding.tvRankingName.setText(list.get(i).getName());
-        if(list.get(i).getQuan() == 0){
-            h.binding.imgvBest.setVisibility(View.GONE);
-        } else if(list.get(i).getQuan() == 300){
-            h.binding.imgvBest.setImageResource(R.drawable.best_300);
-        } else if(list.get(i).getQuan() == 500){
-            h.binding.imgvBest.setImageResource(R.drawable.best_500);
-        } else if(list.get(i).getQuan() == 1000){
-            h.binding.imgvBest.setImageResource(R.drawable.best_1000);
-        }
-//        switch (list.get(i).getQuan()){
-//
-//            case 300 :
-//                h.binding.imgvBest.setImageResource(R.drawable.best_300);
-//                break;
-//            case 500 :
-//                h.binding.imgvBest.setImageResource(R.drawable.best_500);
-//                break;
-//            case 1000 :
-//                h.binding.imgvBest.setImageResource(R.drawable.best_1000);
-//                break;
-//            default:
-//                h.binding.imgvBest.setVisibility(View.GONE);
+//        if(list.get(i).getQuan() == 0){
+//            h.binding.imgvBest.setVisibility(View.GONE);
+//        } else if(list.get(i).getQuan() == 300){
+//            h.binding.imgvBest.setImageResource(R.drawable.best_300);
+//        } else if(list.get(i).getQuan() == 500){
+//            h.binding.imgvBest.setImageResource(R.drawable.best_500);
+//        } else if(list.get(i).getQuan() == 1000){
+//            h.binding.imgvBest.setImageResource(R.drawable.best_1000);
 //        }
+        switch (list.get(i).getQuan()){
+
+            case 300 :
+                h.binding.imgvBest.setImageResource(R.drawable.best_300);
+                break;
+            case 500 :
+                h.binding.imgvBest.setImageResource(R.drawable.best_500);
+                break;
+            case 1000 :
+                h.binding.imgvBest.setImageResource(R.drawable.best_1000);
+                break;
+            default:
+                h.binding.imgvBest.setVisibility(View.GONE);
+        }
     }
 
     @Override

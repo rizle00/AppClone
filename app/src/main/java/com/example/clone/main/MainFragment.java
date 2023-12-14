@@ -78,7 +78,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         binding.llItemMore.setOnClickListener(v -> {
 //            채크 필요
             binding.llBtnBelow.setVisibility(View.VISIBLE);
-           binding.llItemBedge.setVisibility(View.VISIBLE);
+           binding.llItemBadge.setVisibility(View.VISIBLE);
            binding.llItemMore.setVisibility(View.GONE);
         });
 
