@@ -18,7 +18,7 @@
             android:src="@drawable/img_happy_logo"/>
         <TextView
             android:layout_marginRight="200dp"
-           android:layout_alignParentRight="true"
+            android:layout_alignParentRight="true"
             android:textColor="#193E61"
             android:paddingTop="20dp"
             android:textSize="30dp"
@@ -198,10 +198,10 @@
 
 
 
-<LinearLayout
-    android:layout_width="0dp"
-    android:layout_height="match_parent"
-    android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageView
                 android:layout_width="110dp"

@@ -1,4 +1,4 @@
-package com.example.clone;
+package com.example.clone.storeInfo;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.clone.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link nv4List#newInstance} factory method to
+ * Use the {@link StoreInfoFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class nv4List extends Fragment {
+public class StoreInfoFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class nv4List extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public nv4List() {
+    public StoreInfoFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class nv4List extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment nv4List.
+     * @return A new instance of fragment StoreInfoFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static nv4List newInstance(String param1, String param2) {
-        nv4List fragment = new nv4List();
+    public static StoreInfoFragment newInstance(String param1, String param2) {
+        StoreInfoFragment fragment = new StoreInfoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class nv4List extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nv4_list, container, false);
+        return inflater.inflate(R.layout.fragment_store_info, container, false);
     }
 }

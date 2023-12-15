@@ -1,8 +1,10 @@
-package com.example.clone;
+package com.example.clone.myPb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.clone.R;
 
 public class MyPbActivity extends AppCompatActivity {
 

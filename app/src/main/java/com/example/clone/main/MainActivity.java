@@ -1,4 +1,4 @@
-package com.example.clone;
+package com.example.clone.main;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.clone.R;
 import com.example.clone.databinding.ActivityMainBinding;
 import com.example.clone.main.MainFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;

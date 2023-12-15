@@ -1,4 +1,4 @@
-package com.example.clone;
+package com.example.clone.order;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 
+import com.example.clone.R;
 import com.example.clone.databinding.ActivityOrderBinding;
 import com.example.clone.order.OrderAdt;
 
