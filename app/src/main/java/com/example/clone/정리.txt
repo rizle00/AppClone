@@ -7,3 +7,13 @@
 4. 스타일
 5. 칼라
 6. drawable selector, shape
+
+new Intent(Intent.ACTION_VIEW)
+    .setData(Uri.parse("https://your_youtube_url_here")) // edit this url
+    .setPackage("com.google.android.youtube"));
+https://img.youtube.com/vi/oQAFj-yRKhc/0.jpg
+https://img.youtube.com/vi/Oyl8Nx2IyMQ/0.jpg
+https://img.youtube.com/vi/VqU7RCBT3Rc/0.jpg
+https://img.youtube.com/vi/tot9TfPXBxA/0.jpg
+https://img.youtube.com/vi/rAHgtc5tST8/0.jpg
+https://img.youtube.com/vi/ImTKKWvekbM/0.jpg

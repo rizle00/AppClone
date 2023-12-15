@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.clone.databinding.ActivityMainBinding;
+import com.example.clone.main.MainFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 
 import java.util.zip.Inflater;
@@ -22,13 +23,16 @@ public class MainActivity extends AppCompatActivity {
 
         //바텀 네비게이션에 이미지가 안보여서 처리해줌!!
         binding.bottomNav.setItemIconTintList(null);
-
-
-        setContentView(binding.getRoot());
         ActionBar actionBar = getSupportActionBar();
 
+        changeFragment(new MainFragment());
+        setContentView(binding.getRoot());
 
 
 
+
+    }
+    public void changeFragment(Fragment fragment){
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
     }
     }

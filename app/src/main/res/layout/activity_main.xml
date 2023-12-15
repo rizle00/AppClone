@@ -48,7 +48,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="0.5dp"
         android:background="#737475"
       />
 
@@ -63,7 +63,7 @@
         android:layout_weight="1"/>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="0.5dp"
         android:background="#737475"
         />
 
