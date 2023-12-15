@@ -37,18 +37,19 @@
 
         android:background="#0E355C">
       <TextView
+          android:layout_marginTop="10dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="김민주님"
           android:textColor="#F9F9F9"
-          android:textSize="25dp"
-          android:layout_margin="10dp"/>
+          android:textSize="24dp"
+          android:layout_marginLeft="20dp"/>
 
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
-            android:layout_height="80dp"
+            android:layout_height="75dp"
             android:layout_margin="10dp"
             android:background="#F6F8FA"
             app:cardCornerRadius="10dp"
@@ -66,20 +67,38 @@
                    android:layout_width="0dp"
                    android:layout_height="match_parent"
                    android:orientation="vertical"
-                   android:padding="10dp"
+                   android:padding="5dp"
                    android:layout_weight="5">
 
                       <ImageView
+                          android:layout_marginTop="10dp"
                        android:layout_width="110dp"
-                       android:layout_height="30dp"
+                       android:layout_height="23dp"
                           android:src="@drawable/img_point"/>
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
                     <TextView
-                       android:layout_width="90dp"
+                        android:gravity="right"
+                        android:layout_weight="2.5"
+                       android:layout_width="0dp"
                        android:layout_height="30dp"
                        android:textSize="20dp"
-                       android:text=" 0P"
+                       android:text=" 2,8000"
                        android:layout_marginLeft="30dp"
                        android:textColor="#EC1340"/>
+
+                       <TextView
+                           android:layout_width="20dp"
+                           android:layout_height="30dp"
+                           android:textSize="20dp"
+                           android:text=" P"
+                           android:layout_marginLeft="2dp"
+                           android:textColor="#EC1340"/>
+                   </LinearLayout>
+
                </LinearLayout>
 
                 <LinearLayout
@@ -132,71 +151,525 @@
 
 
 
-
-<LinearLayout
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="7"
     android:orientation="vertical">
     <TextView
-        android:id="@+id/my_benefit"
+        android:textColor="#090B0D"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="나의혜택"
         android:layout_marginLeft="10dp"
         android:textSize="20dp"
         android:textStyle="bold"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:orientation="horizontal">
 
-    <ImageView
-
-
-
-        android:layout_width="100dp"
-        android:layout_height="40dp"
-        android:src="@drawable/img_my_benefit1"
-        />
-    <ImageView
-
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:src="@drawable/img_my_benefit1"
-        />
         <ImageView
 
-            android:layout_width="50dp"
-            android:layout_height="40dp"
+            android:layout_marginRight="200dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
             android:src="@drawable/img_my_benefit1"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="장"/>
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="150dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_my_benefit2"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="장"/>
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="150dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_my_benefit3"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="장"/>
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="100dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_my_benefit4"
+            />
+
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
             />
 
     </LinearLayout>
 
+
+
+
     <View
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
-        android:background="#D9D6D6"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"/>
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
+        style="@style/view_line"
+        />
+    <TextView
+        android:textColor="#090B0D"
+        android:layout_marginBottom="10dp"
+       android:layout_marginTop="20dp"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="100dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_mypage1"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="주문"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            />
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="장"/>
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="190dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_mypage2"
+            />
+
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
         />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_marginRight="200dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_mypage3"
+            />
+
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+    <View
+        style="@style/view_line"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:layout_width="240dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="120dp"
+            android:src="@drawable/img_mypage4" />
+
+        <ImageView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            />
+
+    </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+
+        <TextView
+            android:textColor="#090B0D"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="고객센터"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_marginRight="235dp"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_my_center1"
+                />
+
+            <ImageView
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="170dp"
+                android:src="@drawable/img_my_center2" />
+
+            <ImageView
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_marginRight="180dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_my_center3"
+                />
+
+            <ImageView
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="200dp"
+                android:src="@drawable/img_my_center4" />
+
+            <ImageView
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_marginRight="180dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_my_center5"
+                />
+
+            <ImageView
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_right"
+                />
+
+        </LinearLayout>
+        <View
+            style="@style/view_line"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:background="#E0E0E0"
+            android:orientation="horizontal">
 
 
 
-</LinearLayout>
 
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:text="이용약관"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="40dp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+
+                android:text="개인정보처리방침"
+                android:textSize="15dp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_weight="4"
+
+                />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/img_suljung0"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
 
 
 </LinearLayout>
