@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".event.EventCommonFragment"
     android:orientation="vertical">
 
@@ -19,19 +20,19 @@
             style="@style/chip_event"
             android:checked="true"
             android:text="전체"
-            app:iconStartPadding="5dp" />
+             />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_2"
+            android:id="@+id/event_chip_2"
             style="@style/chip_event"
             android:text="파바앱"
-            app:iconStartPadding="5dp" />
+             />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip_3"
+            android:id="@+id/event_chip_3"
             style="@style/chip_event"
             android:text="제휴행사"
-            app:iconStartPadding="5dp" />
+             />
 
     </com.google.android.material.chip.ChipGroup>
     <View
@@ -57,6 +58,7 @@
             android:fontFamily="@font/spoqahansansneo_regular"
             android:text="총"/>
         <TextView
+            android:id="@+id/event_tv_quan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spoqahansansneo_regular"
@@ -78,7 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/event_recv"
+                android:id="@+id/event_recv_common"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </androidx.core.widget.NestedScrollView>

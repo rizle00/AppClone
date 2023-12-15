@@ -21,14 +21,9 @@
             android:padding="5dp"/>
         <TextView
             android:id="@+id/event_tv_title"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="50dp"
+            style="@style/tv_title"
             android:text="이벤트"
-            android:textColor="@color/black"
-            android:fontFamily="@font/spoqahansansneo_bold"
-            android:textSize="22dp"
-            android:gravity="center"/>
+            />
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"

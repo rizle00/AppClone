@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    
+
+
     <style name="ll_banner_btns">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
@@ -59,24 +60,24 @@
         <item name="android:textSize">20dp</item>
 
     </style>
-
     <style name="tv_event" parent="tv_rec">
         <item name="android:paddingTop">8dp</item>
         <item name="android:paddingBottom">8dp</item>
     </style>
-    <style name="v_line_sel">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">3dp</item>
-        <item name="android:background">@color/dark_blue</item>
+    <style name="tv_title">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/spoqahansansneo_bold</item>
+        <item name="android:gravity">center</item>
+
     </style>
 
-    <style name="v_line_def">
-        <item name="alpha">0.4</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">3dp</item>
-        <item name="android:background">#DCDBDB</item>
-    </style>
     <style name="chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipStrokeWidth">0.5dp</item>
+        <item name="chipStrokeColor">@color/gray</item>
         <item name="chipBackgroundColor">@drawable/chip_bg_state</item>
         <item name="android:fontFamily">@font/spoqahansansneo_regular</item>
         <item name="android:textColor">@drawable/chip_tv_state</item>
@@ -101,14 +102,33 @@
         <item name="android:background">#D9D6D6</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
-
-
     </style>
 
     <style name="view_line_thin">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.5dp</item>
         <item name="android:background">#737475</item>
+
+    </style>
+    <style name="v_line_sel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="v_line_def">
+        <item name="alpha">0.4</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">#DCDBDB</item>
+    </style>
+
+    <style name="v_line_ver">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:background">#737475</item>
+        <item name="android:alpha">0.5</item>
 
     </style>
 </resources>

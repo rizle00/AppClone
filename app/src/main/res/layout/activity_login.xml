@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.LoginActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/login_imgv_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_back"
+                />
+        <TextView
+            style="@style/tv_title"
+            android:text="로그인"
+            android:layout_marginRight="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_thin"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="안녕하세요?\n파리바게뜨 입니다."
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파리바게뜨앱은"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 해피포인트 통합회원제"
+            android:textColor="@color/light_blue"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운영됩니다."
+            android:layout_marginBottom="60dp"
+            />
+
+        <EditText
+            android:id="@+id/login_edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="40dp"
+            android:hint="해피포인트 아이디"
+            android:drawableLeft="@drawable/ic_person"/>
+        <EditText
+            android:id="@+id/login_edt_pw"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="비밀번호"
+            android:drawableLeft="@drawable/ic_lock"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/login_cbx_auto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_selector"
+                android:paddingLeft="3dp"
+                android:drawableLeft="@drawable/ic_check"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="자동 로그인"/>
+            <CheckBox
+                android:id="@+id/login_cbx_save"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_selector"
+                android:paddingLeft="3dp"
+                android:drawableLeft="@drawable/ic_check"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="아이디 저장"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:fontFamily="@font/spoqahansansneo_bold"
+            android:textColor="@color/light_blue"
+            android:textSize="20dp"
+            app:strokeColor="@color/light_blue"
+            app:strokeWidth="1dp"
+            app:cornerRadius="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="5dp"
+            android:stateListAnimator="@null"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:text="아이디/비밀번호 찾기"/>
+            <View
+                style="@style/v_line_ver"/>
+            <TextView
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="회원가입"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--     추후 이미지로 처리-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:backgroundTint="@color/bg_blue"
+        android:src="@drawable/ic_check"/>
+</LinearLayout>
