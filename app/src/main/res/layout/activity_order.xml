@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/imgv_back"
+            android:id="@+id/order_imgv_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/img_back"
@@ -24,27 +24,29 @@
             android:layout_weight="1"
             android:layout_height="50dp"
             android:text="제품선택"
+            android:textColor="@color/black"
             android:fontFamily="@font/spoqahansansneo_bold"
-            android:textSize="25dp"
+            android:textSize="22dp"
             android:gravity="center"/>
         <ImageView
-            android:id="@+id/imgv_search"
+            android:id="@+id/order_imgv_search"
             android:layout_gravity="center"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/ic_search"
             android:padding="5dp"/>
         <FrameLayout
+            android:id="@+id/order_fl_cart"
             android:layout_width="50dp"
             android:layout_height="50dp">
             <ImageView
-                android:id="@+id/imgv_cart"
                 android:layout_gravity="center"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/ic_cart"
                 android:padding="5dp"/>
             <TextView
+                android:id="@+id/order_tv_cart"
                 android:layout_marginLeft="26dp"
                 android:layout_marginTop="6dp"
                 android:layout_width="15dp"
@@ -62,16 +64,16 @@
     </LinearLayout>
 
     <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#737475"
+       style="@style/view_line_thin"
         />
 
     <RelativeLayout
+        android:id="@+id/order_rl_cake"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/bg_blue">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/order_btn_cake"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="케이크 예약"
@@ -94,10 +96,30 @@
             />
     </RelativeLayout>
 
-
+    <LinearLayout
+        android:id="@+id/order_ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_content_unsel"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_search"/>
+        </androidx.cardview.widget.CardView>
+        <View
+            style="@style/view_line_thin"/>
+    </LinearLayout>
     <FrameLayout
         android:id="@+id/container"
-
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -111,16 +133,19 @@
         android:paddingTop="13dp"
         android:paddingBottom="18dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"/>
         </androidx.core.widget.NestedScrollView>
 
-    </FrameLayout>
+
     <LinearLayout
+        android:id="@+id/order_ll_choice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="bottom"
-        android:background="@color/gray"
+        android:background="@color/dark_gray"
+        android:alpha="0.9"
         android:padding="20dp">
         <TextView
 
@@ -142,7 +167,7 @@
             android:fontFamily="@font/spoqahansansneo_regular"/>
 
     </LinearLayout>
-
+    </FrameLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"

@@ -59,6 +59,11 @@
         <item name="android:textSize">20dp</item>
 
     </style>
+
+    <style name="tv_event" parent="tv_rec">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
     <style name="v_line_sel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">3dp</item>
@@ -83,6 +88,10 @@
 
 
     </style>
+    <style name="chip_event" parent="chip">
+        <item name="chipBackgroundColor">@drawable/chip_event_bg_state</item>
+        <item name="android:textColor">@drawable/chip_event_tv_state</item>
+    </style>
 
     <style name="view_line">
         <item name="android:layout_marginLeft">10dp</item>
@@ -93,6 +102,13 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">2dp</item>
 
+
+    </style>
+
+    <style name="view_line_thin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#737475</item>
 
     </style>
 </resources>

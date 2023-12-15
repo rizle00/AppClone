@@ -7,9 +7,11 @@
     android:padding="10dp"
     android:gravity="center">
     <ImageView
+        android:scaleType="fitCenter"
         android:id="@+id/imgv_rec"
         android:layout_width="180dp"
         android:layout_height="180dp"
+        android:padding="25dp"
         android:src="@drawable/rec1"/>
     <LinearLayout
         android:layout_marginTop="5dp"

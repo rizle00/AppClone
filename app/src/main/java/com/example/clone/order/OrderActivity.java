@@ -20,6 +20,7 @@ public class OrderActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         binding = ActivityOrderBinding.inflate(getLayoutInflater());
+
         binding.recvOrder.setAdapter(new OrderAdt(getList()));
         binding.recvOrder.setLayoutManager(new GridLayoutManager(this,5, LinearLayoutManager.HORIZONTAL, false));
         binding.bottomNav.setItemIconTintList(null);

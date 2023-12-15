@@ -7,19 +7,22 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
-        android:label="@string/app_name"
+        android:label="PB"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Clone"
         tools:targetApi="31">
         <activity
-            android:name=".order.OrderActivity"
+            android:name=".event.EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
             android:exported="false" />
         <activity
             android:name=".myPb.MyPbActivity"
             android:exported="false" />
         <activity
-            android:name=".main.MainActivity"
+            android:name=".order.OrderActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

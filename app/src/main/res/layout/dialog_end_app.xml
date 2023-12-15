@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="25dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            >
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="파바앱을 종료하시겠습니까?"
+                android:textColor="@color/black"
+                android:fontFamily="@font/spoqahansansneo_regular"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#737475"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/tv_dialog_cancel"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:textSize="18dp"
+                android:fontFamily="@font/spoqahansansneo_regular"/>
+            <View
+                android:layout_gravity="center"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="#737475"
+                android:alpha="0.5"
+                />
+            <TextView
+                android:id="@+id/tv_dialog_confirm"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="확인"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/spoqahansansneo_bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
