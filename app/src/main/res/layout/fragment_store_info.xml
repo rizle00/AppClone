@@ -114,10 +114,12 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="260dp" />
+
+
     <HorizontalScrollView
-        android:background="#EBF3FB"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="#EBF3FB"
         android:scrollbars="none">
 
         <com.google.android.material.chip.ChipGroup
@@ -134,8 +136,8 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="현장행사"
+                android:textAlignment="center"
                 android:textColor="#A3A4A5"
                 app:chipBackgroundColor="#F9F9FA"
                 app:chipIconEnabled="true"
@@ -151,8 +153,8 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="구독권"
+                android:textAlignment="center"
                 android:textColor="#A3A4A5"
                 app:chipBackgroundColor="#F9F9FA"
                 app:chipIconEnabled="true"
@@ -168,8 +170,8 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
                 android:text="쿠폰"
+                android:textAlignment="center"
                 android:textColor="#A3A4A5"
                 app:chipBackgroundColor="#F9F9FA"
                 app:chipIconEnabled="true"
@@ -196,6 +198,7 @@
                 app:iconStartPadding="10dp"
                 app:textEndPadding="5dp"
                 app:textStartPadding="5dp" />
+
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_5"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
@@ -215,8 +218,6 @@
         </com.google.android.material.chip.ChipGroup>
 
     </HorizontalScrollView>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
