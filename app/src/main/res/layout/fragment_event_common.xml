@@ -58,7 +58,7 @@
             android:fontFamily="@font/spoqahansansneo_regular"
             android:text="총"/>
         <TextView
-            android:id="@+id/event_tv_quan"
+            android:id="@+id/event_tv_quan_app"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spoqahansansneo_regular"
@@ -70,20 +70,58 @@
             android:fontFamily="@font/spoqahansansneo_regular"
             android:text="건"/>
     </LinearLayout>
-    <FrameLayout
-        android:id="@+id/event_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/event_recv_common"
+                android:id="@+id/event_recv_common_app"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </androidx.core.widget.NestedScrollView>
-    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="제휴행사 혜택"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/spoqahansansneo_bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="총"/>
+        <TextView
+            android:id="@+id/event_tv_quan_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:textColor="#F44336"
+            android:text="10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spoqahansansneo_regular"
+            android:text="건"/>
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/event_recv_common_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+
 
 </LinearLayout>

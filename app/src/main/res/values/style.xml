@@ -110,6 +110,11 @@
         <item name="android:background">#737475</item>
 
     </style>
+
+    <style name="view_line_thick" parent="view_line_thin">
+        <item name="android:layout_height">3dp</item>
+
+    </style>
     <style name="v_line_sel">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">3dp</item>
