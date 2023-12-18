@@ -121,6 +121,12 @@
         <item name="android:background">@color/dark_blue</item>
     </style>
 
+    <style name="v_line_white">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="background">@color/white</item>
+    </style>
+
     <style name="v_line_def">
         <item name="alpha">0.4</item>
         <item name="android:layout_width">match_parent</item>
