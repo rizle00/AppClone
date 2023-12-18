@@ -95,13 +95,13 @@
             android:layout_marginRight="20dp"
             android:orientation="horizontal">
             <ImageView
-                android:id="badge_imgv_bad1"
+                android:id="@+id/badge_imgv_bad1"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
             <ImageView
-                android:id="badge_imgv_bad2"
+                android:id="@+id/badge_imgv_bad2"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -128,26 +128,26 @@
             android:layout_marginBottom="20dp"
             android:orientation="horizontal">
             <ImageView
-                android:id="badge_imgv_bad3"
+                android:id="@+id/badge_imgv_bad3"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
             <ImageView
-                android:id="badge_imgv_bad4"
+                android:id="@+id/badge_imgv_bad4"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
             <ImageView
-                android:id="badge_imgv_bad5"
+                android:id="@+id/badge_imgv_bad5"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/ic_launcher"/>
         </LinearLayout>
         <ImageView
-            android:id="badge_imgv_bad6"
+            android:id="@+id/badge_imgv_bad6"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="50dp"
             android:layout_width="120dp"

@@ -8,13 +8,17 @@
         android:fontWeight="400"
         android:font="@font/spoqahansansneo_regular"
         android:fontStyle="normal"
+       />
+    <font
         android:fontWeight="500"
         android:font="@font/spoqahansansneo_regular"
         android:fontStyle="normal"/>
     <font
         android:fontWeight="700"
         android:font="@font/spoqahansansneo_bold"
-        android:fontStyle="normal"
+        android:fontStyle="normal"/>
+    <font
+
         android:fontWeight="1000"
         android:font="@font/spoqahansansneo_bold"
         android:fontStyle="normal"/>
