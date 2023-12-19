@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".nv4List"
+    android:orientation="vertical">
+<!--    map 넣기-->
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+<LinearLayout
+    android:id="@+id/ll_store_toggle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#F6F6F6">
+    <TextView
+        android:id="@+id/tv_store_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지도닫기 "
+        android:textSize="18dp"
+        android:drawableRight="@drawable/ic_arrow_up"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_store_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지도보기 "
+        android:textSize="18dp"
+        android:drawableRight="@drawable/ic_arrow_down"/>
+</LinearLayout>
+
+
+</LinearLayout>
