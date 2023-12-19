@@ -194,7 +194,7 @@
                             android:textSize="18dp"
                             android:textColor="@color/black"/>
                         <TextView
-                            android:id="@+id/tv_main_login_coupon"
+                            android:id="@+id/tv_main_login_point"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2,215"
