@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총"
+            android:padding="5dp"
+            android:textSize="22dp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#F2420B"
+            android:padding="5dp"
+            android:textSize="22dp"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="개"
+            android:textSize="22dp"
+            />
+
+            <!--최신순 이미지이름 :img_pb_gudog_recent_rank.jpg-->
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:src="@drawable/img_pb_gudog_end_rank"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    <ImageView
+
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/img_pb_gudog_no"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F1F3F4"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:src="@drawable/my_pb_information"
+            android:layout_marginRight="220dp"
+
+            />
+         <!--연관 이미지 :baseline_expand_less_24.xml -->
+        <ImageView
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/baseline_expand_more_24"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

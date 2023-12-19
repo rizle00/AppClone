@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
 
            if(item.getItemId() == R.id.tab3){
-               changeFragment(new FriendFragment());
+
            //다이얼로그 관련해서 작업해야함
 
        }
