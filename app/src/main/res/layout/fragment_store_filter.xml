@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".storeInfo.StoreFilterFragment"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:paddingLeft="33dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp"
+        android:id="@+id/event_chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/shape_store_bg_chip"
+        android:elevation="3dp"
+        >
+        <!-- 색 수정하기 바탕선 긋기?-->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/store_filter_chip_1"
+
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/light_gray"
+            app:chipStrokeWidth="0.5dp"
+            android:text="픽업"
+            android:textColor="@color/gray"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/store_filter_chip_2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/white"
+            app:chipStrokeColor="@color/light_gray"
+            app:chipStrokeWidth="0.5dp"
+            android:text="주차"
+            android:textColor="@color/gray"
+            /><com.google.android.material.chip.Chip
+        android:id="@+id/store_filter_chip_3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        app:chipBackgroundColor="@color/white"
+        app:chipStrokeColor="@color/light_gray"
+        app:chipStrokeWidth="0.5dp"
+        android:text="객석"
+        android:textColor="@color/gray"
+        /><com.google.android.material.chip.Chip
+        android:id="@+id/store_filter_chip_4"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        app:chipBackgroundColor="@color/white"
+        app:chipStrokeColor="@color/light_gray"
+        app:chipStrokeWidth="0.5dp"
+        android:text="화장실"
+        android:textColor="@color/gray"
+        /><com.google.android.material.chip.Chip
+        android:id="@+id/store_filter_chip_5"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        app:chipBackgroundColor="@color/white"
+        app:chipStrokeColor="@color/light_gray"
+        app:chipStrokeWidth="0.5dp"
+        android:text="Wi-Fi"
+        android:textColor="@color/gray"
+        /><com.google.android.material.chip.Chip
+        android:id="@+id/store_filter_chip_6"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        app:chipBackgroundColor="@color/white"
+        app:chipStrokeColor="@color/light_gray"
+        app:chipStrokeWidth="0.5dp"
+        android:text="세스코"
+        android:textColor="@color/gray"
+        /><com.google.android.material.chip.Chip
+        android:id="@+id/store_filter_chip_7"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        app:chipBackgroundColor="@color/white"
+        app:chipStrokeColor="@color/light_gray"
+        app:chipStrokeWidth="0.5dp"
+        android:text="식품위생"
+        android:textColor="@color/gray"
+        />
+
+    </com.google.android.material.chip.ChipGroup>
+<!--    이미지 바꾸기-->
+    <ImageView
+        android:id="@+id/imgv_store_filter_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alert_container"/>
+
+</LinearLayout>
