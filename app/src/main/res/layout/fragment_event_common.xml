@@ -14,7 +14,8 @@
         android:layout_margin="15dp"
         app:singleSelection="true"
         >
-<!-- 색 수정하기 바탕선 긋기?-->
+<!-- 색 수정하기 바탕선 긋기
+선택시 스크롤기능?-->
         <com.google.android.material.chip.Chip
             android:id="@+id/event_chip_1"
             style="@style/chip_event"

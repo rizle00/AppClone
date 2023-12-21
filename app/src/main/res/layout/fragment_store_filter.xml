@@ -43,7 +43,8 @@
             app:chipStrokeWidth="0.5dp"
             android:text="주차"
             android:textColor="@color/gray"
-            /><com.google.android.material.chip.Chip
+            />
+        <com.google.android.material.chip.Chip
         android:id="@+id/store_filter_chip_3"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -53,7 +54,8 @@
         app:chipStrokeWidth="0.5dp"
         android:text="객석"
         android:textColor="@color/gray"
-        /><com.google.android.material.chip.Chip
+        />
+        <com.google.android.material.chip.Chip
         android:id="@+id/store_filter_chip_4"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -63,7 +65,8 @@
         app:chipStrokeWidth="0.5dp"
         android:text="화장실"
         android:textColor="@color/gray"
-        /><com.google.android.material.chip.Chip
+        />
+        <com.google.android.material.chip.Chip
         android:id="@+id/store_filter_chip_5"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -73,7 +76,8 @@
         app:chipStrokeWidth="0.5dp"
         android:text="Wi-Fi"
         android:textColor="@color/gray"
-        /><com.google.android.material.chip.Chip
+        />
+        <com.google.android.material.chip.Chip
         android:id="@+id/store_filter_chip_6"
         android:layout_width="100dp"
         android:layout_height="60dp"
@@ -83,7 +87,8 @@
         app:chipStrokeWidth="0.5dp"
         android:text="세스코"
         android:textColor="@color/gray"
-        /><com.google.android.material.chip.Chip
+        />
+        <com.google.android.material.chip.Chip
         android:id="@+id/store_filter_chip_7"
         android:layout_width="100dp"
         android:layout_height="60dp"

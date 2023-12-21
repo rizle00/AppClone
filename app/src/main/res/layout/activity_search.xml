@@ -58,6 +58,7 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20dp"/>
+<!--        이미지 바꾸기-->
         <ImageView
             android:scaleType="fitXY"
             android:layout_width="match_parent"
